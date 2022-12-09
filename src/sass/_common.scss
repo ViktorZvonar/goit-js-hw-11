@@ -55,9 +55,7 @@ input {
 
 .load-more {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 20px;
+  margin: 20px auto;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -98,7 +96,7 @@ input {
 
 .photo-card__img {
   display: block;
-  height: 50vh;
+  height: 30vh;
   object-fit: cover;
 }
 
