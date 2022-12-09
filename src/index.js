@@ -8,7 +8,7 @@ const galleryEl = document.querySelector('.gallery');
 
 const btnLoadMore = document.querySelector('.load-more');
 let lightBox = new SimpleLightbox('.gallery a');
-let page = 1;
+let page;
 let demand;
 
 searchFormEl.addEventListener('submit', onSearch);
