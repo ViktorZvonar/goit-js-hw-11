@@ -15,6 +15,7 @@ searchFormEl.addEventListener('submit', onSearch);
 btnLoadMore.addEventListener('click', onLoadMore);
 
 function onSearch(event) {
+  btnLoadMore.classList.add('hidden');
   page = 1;
   event.preventDefault();
   demand = event.currentTarget.searchQuery.value.trim();
