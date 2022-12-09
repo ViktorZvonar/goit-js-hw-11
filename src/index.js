@@ -24,7 +24,7 @@ function onSearch(event) {
     return Notiflix.Notify.info('Please type your search');
   }
 
-  fetchPics(demand, page)
+  fetchPics(demand)
     .then(({ data }) => {
       if (data.totalHits === 0) {
         Notiflix.Notify.warning(
@@ -36,6 +36,9 @@ function onSearch(event) {
         Notiflix.Notify.success(`Hooray! We found ${data.totalHits} images.`);
 
         btnLoadMore.classList.remove('hidden');
+      }
+      if (data.totalHits <= 40) {
+        btnLoadMore.classList.add('hidden');
       }
     })
     .catch(error => console.log(error));
