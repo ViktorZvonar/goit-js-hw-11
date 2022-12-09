@@ -8,7 +8,27 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <div class="shell">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="My search of images..."
+        />
+        <button class="submit-btn" type="submit">
+          <img
+            src="images/Magnifying-Glass.png"
+            alt="Magnifying-Glass"
+            width="20"
+          />
+        </button>
+      </form>
+    </div>
+
+    <div class="gallery-shell">
+      <div class="gallery"></div>
+      <button type="button" class="load-more hidden">I want more</button>
+    </div>
   </body>
 </html>

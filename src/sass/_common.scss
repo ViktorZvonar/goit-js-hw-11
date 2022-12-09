@@ -1,1 +1,119 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: Roboto, sans-serif;
+
+  font-size: 14px;
+  line-height: 1.75;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.load-more.hidden {
+  display: none;
+}
+
+.shell {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: tomato;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 25%;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: white;
+}
+
+.submit-btn {
+  background-color: lightgray;
+  padding: 10px;
+
+  border: none;
+  border-radius: 0 5px 5px 0;
+
+  cursor: pointer;
+}
+
+.load-more {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+}
+
+.gallery-shell {
+  margin-top: 20px;
+}
+
+.gallery,
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery {
+  gap: 20px;
+  justify-content: center;
+}
+
+.photo-link {
+  width: calc((100% - 80px) / 4);
+  border: 2px solid rgb(241, 238, 238);
+  border-radius: 5px;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.photo-card__img {
+  display: block;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.info {
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.info-item:not(:first-child) {
+  margin-left: 5px;
+}
